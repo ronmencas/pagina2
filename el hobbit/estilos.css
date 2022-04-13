@@ -1,0 +1,290 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Century Gothic';
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*==========================================*/
+
+.title{
+	width: 100%;
+	
+	height: 200px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title h1{
+	color: rgb(179, 166, 107);
+	font-size: 70px;
+	font-weight: 200;
+	text-align: center;
+}
+
+.navegacion{
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+
+.menu{
+	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	height: 90px;
+}
+
+.menu li{
+	flex-basis: 0;
+	flex-grow: 1;
+	border-right: 1px solid #000000;
+	position: relative;
+}
+
+.menu .first-item{
+	border-left: 1px solid #000000;
+}
+
+.menu li a{
+	display: flex;
+	flex-direction: column;
+	font-size: 15px;
+  
+}
+
+
+
+.menu li a{
+  font: oblique bold 120% cursive;
+}
+.menu li a{ font-weight: 900; }
+
+
+
+
+
+.menu .imagen{
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+	width: 0%;
+	z-index: 20;
+
+	-webkit-transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+   -moz-transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+     -o-transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+        transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950); /* easeInOutSine */
+
+-webkit-transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+   -moz-transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+     -o-transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+        transition-timing-function: cubic-bezier(0.445, 0.050, 0.550, 0.950); /* easeInOutSine */
+
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(163, 36, 36, 0.51);
+-moz-box-shadow: 0px 0px 5px 0px rgba(40, 149, 44, 0.51);
+box-shadow: 0px 0px 5px 0px rgba(8, 231, 127, 0.51);
+}
+
+.menu li a .text-item{
+	width: 100;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	top: 0%;
+	position: absolute;
+	z-index: 10;
+
+	-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+   -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+     -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+        transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+
+-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+   -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+     -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+}
+
+.menu li a .down-item{
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	
+
+	-webkit-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+   -moz-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+     -o-transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+        transition: all 200ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+
+-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+   -moz-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+     -o-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+}
+
+.menu li:hover .down-item, .menu li:hover .text-item{
+	top: 100%;
+	height: 115%;
+}
+
+.menu li:hover .imagen{
+	width: 100%;
+	right: 0px;
+}
+h3 {
+    font: oblique bold 120% Arial;
+  }
+  h2 {
+    font: oblique bold 120% Castellar;
+  }
+  p {
+    font: oblique bold 120% Arial MT;
+  }
+  h4 {
+    font: oblique bold 120% Arial Serif;
+  }
+  h1 {
+    font: oblique bold 120% Algerian;
+  }
+
+
+  h1 {
+    font-size: 5.0em; /* 1.4em x 10px = 14px */
+  }
+
+  p {
+    font-size: 1.3em; /* 1.0em x 50px = 50px */
+  }
+  h1 {
+    font-size: 2.5em; /* 1.0em x 50px = 50px */
+  }
+  h2 {
+    font-size: 2.3em; /* 1.0em x 50px = 50px */
+  }
+  h3 {
+    font-size: 2.0em; /* 1.0em x 50px = 50px */
+  }
+  h4 {
+    font-size: 1.7em; /* 1.0em x 50px = 50px */
+  }
+  h1 {
+    font-size: 3.0em; /* 1.0em x 50px = 50px */
+  }
+  body{
+      margin: 0%;
+  }
+  video {
+      position: fixed;
+      min-width: 100%;
+      min-height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -1;
+  }
+  p { color: rgb(153, 127, 51); }
+  h2 { color: rgb(120, 103, 70); }
+  h3 { color: rgb(111, 89, 39); }
+  h4 { color: rgb(165, 136, 72); }
+  h1 {
+    text-shadow: 
+      3px 3px 1px rgb(131, 86, 40),
+      5px 5px 2px rgb(144, 116, 14),
+      8px 8px 3px rgb(31, 31, 34);
+      ;
+  
+  }
+
+
+
+
+  
+  p {
+    line-height: 44px;
+   }
+   p.centrado {
+    text-align: center;
+  }
+  
+
+
+  *{
+      box-sizing: border-box;
+      margin: 0%;
+      padding: 0%;
+
+  }
+
+  body{
+      font-family: 'Relaway', sans-serif ;
+  }
+h6{
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+}
+
+.linea{
+    background: rgb(173, 118, 24);
+    height: 5px;
+    width: 100%;
+    display: block;
+
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+
+}
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5) ;
+}
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.galeria a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
